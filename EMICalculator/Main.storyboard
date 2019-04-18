@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="rsK-ks-a1H">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="J5B-Lf-LAK">
+            <objects>
+                <navigationController id="rsK-ks-a1H" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xU0-xl-nzL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i1L-BG-Ajf" kind="relationship" relationship="rootViewController" id="bcd-B6-REb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAR-m9-Mcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-811.20000000000005" y="298.65067466266868"/>
+        </scene>
+        <!--CalculatorVC-->
+        <scene sceneID="ZQg-o6-BV0">
+            <objects>
+                <viewController storyboardIdentifier="EMICalculatorVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i1L-BG-Ajf" customClass="EMICalculatorVC" customModule="EMICalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eD2-as-lbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="eCu-VV-Mhm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jx4-fu-iZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmU-e2-MHZ">
+                                <rect key="frame" x="0.0" y="500" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.39563476460000002" blue="0.25027065590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tap here for graph view">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chartButton:" destination="i1L-BG-Ajf" eventType="touchUpInside" id="kdK-xu-PSG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-fA-5RS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="169"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-oI-ZJw">
+                                        <rect key="frame" x="0.0" y="111" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.4431372549" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly EMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laq-Nc-C9x">
+                                        <rect key="frame" x="20" y="94" width="335" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-x3-ScQ">
+                                        <rect key="frame" x="0.0" y="49" width="187" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="23"/>
+                                        <color key="textColor" red="1" green="0.25098039220000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Interest Payable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44y-Dj-234">
+                                        <rect key="frame" x="0.0" y="9" width="187" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="T5x-RF-jY5">
+                                        <rect key="frame" x="187" y="49" width="188" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="23"/>
+                                        <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD3-wP-631">
+                                        <rect key="frame" x="187" y="9" width="188" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Total Payment
+(Principal + Interest)</string>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98168425859999997" green="0.98168425859999997" blue="0.98168425859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="snf-zW-4m0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Wm-tbh">
+                                <rect key="frame" x="7" y="241" width="93.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.87513495080000003" green="0.37054502150000002" blue="0.071118615100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter amount " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-kQ-CIP">
+                                <rect key="frame" x="77" y="266.5" width="221" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="BLJ-eO-C3n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="i1L-BG-Ajf" id="eYY-0O-kxZ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpW-TD-Mfg">
+                                <rect key="frame" x="7" y="316.5" width="74" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.87513495080000003" green="0.37054502150000002" blue="0.071118615100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZC-zF-o0W" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                <rect key="frame" x="7" y="331.5" width="361" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="jui-CF-7th"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="221" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Years" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-5l-0Az">
+                                <rect key="frame" x="304" y="308.5" width="42" height="18"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xy-9I-XCP">
+                                <rect key="frame" x="7" y="390.5" width="92.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.87513495080000003" green="0.37054502150000002" blue="0.071118615100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d18-NO-waQ" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                <rect key="frame" x="7" y="406.5" width="361" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="kDX-Ez-3mY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="221" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hW9-LK-yAg">
+                                <rect key="frame" x="327" y="383.5" width="19" height="18"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d18-NO-waQ" secondAttribute="trailing" constant="7" id="0cA-aU-1F5"/>
+                            <constraint firstItem="vZC-zF-o0W" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" constant="7" id="1B7-Kq-zlz"/>
+                            <constraint firstItem="ocb-fA-5RS" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" id="1QV-5N-NZ3"/>
+                            <constraint firstItem="HTU-Wm-tbh" firstAttribute="top" secondItem="ocb-fA-5RS" secondAttribute="bottom" constant="8" id="1Ut-Sg-kTD"/>
+                            <constraint firstItem="ocb-fA-5RS" firstAttribute="top" secondItem="eD2-as-lbA" secondAttribute="bottom" id="D74-y5-sfF"/>
+                            <constraint firstItem="6Xy-9I-XCP" firstAttribute="top" secondItem="vZC-zF-o0W" secondAttribute="bottom" constant="28" id="Jix-bx-dn0"/>
+                            <constraint firstItem="5Pf-kQ-CIP" firstAttribute="centerX" secondItem="jx4-fu-iZA" secondAttribute="centerX" id="KfD-hr-afB"/>
+                            <constraint firstItem="5Pf-kQ-CIP" firstAttribute="top" secondItem="HTU-Wm-tbh" secondAttribute="bottom" constant="8" id="NeY-TD-NG2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h6e-5l-0Az" secondAttribute="trailing" constant="13" id="Pa9-44-uqd"/>
+                            <constraint firstItem="d18-NO-waQ" firstAttribute="top" secondItem="hW9-LK-yAg" secondAttribute="bottom" constant="5" id="TfT-O2-xvo"/>
+                            <constraint firstItem="d18-NO-waQ" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" constant="7" id="Wga-O6-bcP"/>
+                            <constraint firstItem="vZC-zF-o0W" firstAttribute="top" secondItem="h6e-5l-0Az" secondAttribute="bottom" constant="5" id="bP2-Ks-VFW"/>
+                            <constraint firstItem="6Xy-9I-XCP" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" constant="7" id="e21-UE-9xm"/>
+                            <constraint firstItem="hW9-LK-yAg" firstAttribute="top" secondItem="vZC-zF-o0W" secondAttribute="bottom" constant="21" id="fSQ-HO-lFJ"/>
+                            <constraint firstItem="OpW-TD-Mfg" firstAttribute="top" secondItem="5Pf-kQ-CIP" secondAttribute="bottom" constant="12" id="jQK-3X-Jt1"/>
+                            <constraint firstItem="OpW-TD-Mfg" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" constant="7" id="lGL-g1-eTh"/>
+                            <constraint firstItem="h6e-5l-0Az" firstAttribute="top" secondItem="5Pf-kQ-CIP" secondAttribute="bottom" constant="4" id="mSX-Kn-zui"/>
+                            <constraint firstAttribute="trailing" secondItem="vZC-zF-o0W" secondAttribute="trailing" constant="7" id="nab-HX-Gkv"/>
+                            <constraint firstItem="HTU-Wm-tbh" firstAttribute="leading" secondItem="jx4-fu-iZA" secondAttribute="leading" constant="7" id="u2a-2L-RSY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hW9-LK-yAg" secondAttribute="trailing" constant="13" id="wlk-i7-Q78"/>
+                            <constraint firstAttribute="trailing" secondItem="ocb-fA-5RS" secondAttribute="trailing" id="yIg-MA-nf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1v8-P3-Sx1"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="interestRateRangeSlider" destination="d18-NO-waQ" id="WYA-Pd-rdZ"/>
+                        <outlet property="loanAmountTextField" destination="5Pf-kQ-CIP" id="50R-Av-kPW"/>
+                        <outlet property="loanEmiLabel" destination="yDy-oI-ZJw" id="wY4-8J-Twa"/>
+                        <outlet property="loanRangeSlider" destination="vZC-zF-o0W" id="lRd-iJ-r9U"/>
+                        <outlet property="totalInterestPayableLabel" destination="T4E-x3-ScQ" id="bWw-XJ-Q6H"/>
+                        <outlet property="totalPaymentInterestPlusPrincipalLabel" destination="T5x-RF-jY5" id="WSM-3V-vQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQg-mI-vBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261.60000000000002" y="900.00000000000011"/>
+        </scene>
+        <!--Pie Graph View Controller-->
+        <scene sceneID="n4c-B2-511">
+            <objects>
+                <viewController storyboardIdentifier="PieGraphViewController" id="Fkg-Fp-R84" customClass="PieGraphViewController" customModule="EMICalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBM-t8-kIg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKB-Ci-QCD" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="iCr-LY-kZR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AQK-hQ-NFn"/>
+                    <connections>
+                        <outlet property="pieChart" destination="mKB-Ci-QCD" id="TjU-XC-Lcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hv-is-iaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="906"/>
+        </scene>
+    </scenes>
+</document>
